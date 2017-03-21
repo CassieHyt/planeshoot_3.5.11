@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="big_start" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/big_start" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="C:/wxwidgets2.9.4/lib/gcc_lib/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/wxwidgets2.9.4/lib/gcc_lib/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-lwxmsw29ud_adv  -lwxmsw29ud_aui   -lwxmsw29ud_html  -lwxmsw29ud_core  -lwxbase29ud -lwxbase29ud_net -lwxbase29ud_xml -lwxmsw29ud_gl -lwxtiffd -lwxjpegd -lwxpngd -lwxzlibd -lwxregexud -lwxexpatd -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -lrpcrt4 -ladvapi32 -lwsock32 -lopengl32 -lglu32 -lnetapi32" />
+					<Add directory="C:/wxwidgets2.9.4/lib/gcc_lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/big_start" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:/wxwidgets2.9.4/lib/gcc_lib/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/wxwidgets2.9.4/lib/gcc_lib/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw29u_adv.a" />
+					<Add library="libwxmsw29u_core.a" />
+					<Add library="libwxbase29u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxregexu.a" />
+					<Add library="libwxexpat.a" />
+					<Add directory="C:/wxwidgets2.9.4/lib/gcc_lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+			<Add option="-Wall" />
+			<Add directory="C:/wxwidgets2.9.4/include" />
+			<Add directory="C:/wxwidgets2.9.4/contrib/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:/wxwidgets2.9.4/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+			<Add library="libkernel32.a" />
+			<Add library="libuser32.a" />
+			<Add library="libgdi32.a" />
+			<Add library="libwinspool.a" />
+			<Add library="libcomdlg32.a" />
+			<Add library="libadvapi32.a" />
+			<Add library="libshell32.a" />
+			<Add library="libole32.a" />
+			<Add library="liboleaut32.a" />
+			<Add library="libuuid.a" />
+			<Add library="libcomctl32.a" />
+			<Add library="libwsock32.a" />
+			<Add library="libodbc32.a" />
+		</Linker>
+		<Unit filename="big_modelDialog.cpp" />
+		<Unit filename="big_modelDialog.h" />
+		<Unit filename="big_musicDialog.cpp" />
+		<Unit filename="big_musicDialog.h" />
+		<Unit filename="big_pointsDialog.cpp" />
+		<Unit filename="big_pointsDialog.h" />
+		<Unit filename="big_shopDialog.cpp" />
+		<Unit filename="big_shopDialog.h" />
+		<Unit filename="big_start1Main.cpp" />
+		<Unit filename="big_start1Main.h" />
+		<Unit filename="big_startApp.cpp" />
+		<Unit filename="big_startApp.h" />
+		<Unit filename="big_startMain.cpp" />
+		<Unit filename="big_startMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith/big_modelDialog.wxs" />
+		<Unit filename="wxsmith/big_musicDialog1.wxs" />
+		<Unit filename="wxsmith/big_pointsDialog.wxs" />
+		<Unit filename="wxsmith/big_shopDialog1.wxs" />
+		<Unit filename="wxsmith/big_startdialog.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="big_startApp.cpp" main="big_startDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/big_startdialog.wxs" src="big_startMain.cpp" hdr="big_startMain.h" fwddecl="0" i18n="1" name="big_startDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/big_musicDialog1.wxs" src="big_musicDialog.cpp" hdr="big_musicDialog.h" fwddecl="0" i18n="1" name="big_musicDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/big_shopDialog1.wxs" src="big_shopDialog.cpp" hdr="big_shopDialog.h" fwddecl="0" i18n="1" name="big_shopDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/big_modelDialog.wxs" src="big_modelDialog.cpp" hdr="big_modelDialog.h" fwddecl="0" i18n="1" name="big_modelDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/big_pointsDialog.wxs" src="big_pointsDialog.cpp" hdr="big_pointsDialog.h" fwddecl="0" i18n="1" name="big_pointsDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

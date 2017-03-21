@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="big_startDialog">
+		<title>Plane Shoot</title>
+		<pos>-1,-1</pos>
+		<size>800,600</size>
+		<size_arg>1</size_arg>
+		<style>wxDEFAULT_DIALOG_STYLE|wxCLOSE_BOX</style>
+		<handler function="OnLeftUp" entry="EVT_LEFT_UP" />
+	</object>
+</wxsmith>
